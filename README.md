@@ -11,4 +11,6 @@
 --
 ENDTRY POINT của module go là file main.go
 
-Chay chương trình go trong module: cd vào module vào ** go run main.go **
+Run Go Program trong module: cd vào module vào ** go run main.go **
+
+Làm việc với nhiều module Go: https://github.com/golang/tools/blob/master/gopls/doc/workspace.md 
