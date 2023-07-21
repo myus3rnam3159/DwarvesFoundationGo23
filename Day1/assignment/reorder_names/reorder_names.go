@@ -6,23 +6,27 @@ import (
 )
 
 func main() {
-	args := os.Args
-	name := args[1 : len(args)-1]
+	args := os.Args[1:]
 
 	rules := map[string][]int{
-		"US": {0, 1, 2},
+		"US": {0, 2, 1},
 		"VN": {1, 2, 0},
 	}
 
 	order, existed := rules[args[len(args)-1]]
 	if !existed {
-		order = rules["US"]
+		fmt.Println("Country code not supported")
+		return
 	}
 
-	for _, o := range order {
-		if o < len(name) {
-			fmt.Print(name[o] + " ")
+	for i, idx := range order {
+		if idx < len(args)-1 {
+			fmt.Print(args[idx])
+			if i < len(order)-1 {
+				fmt.Print(" ")
+			} else {
+				fmt.Println()
+			}
 		}
 	}
-	fmt.Println()
 }
