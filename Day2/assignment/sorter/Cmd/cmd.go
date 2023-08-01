@@ -17,10 +17,12 @@ var flags = map[string]sortUtils.SortFunc {
 func runCommand(cmd *cobra.Command, args []string) {
 	var flagUsed = false
 
+	//Sai chỗ này vì chưa reset flag sau khi gọi
 	for k, f := range flags{
 		flagUsed, _ = cmd.Flags().GetBool(k)
 		if flagUsed{
 			f(&args)
+			break
 		}
 	}
 	fmt.Print("Output: ")

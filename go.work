@@ -5,3 +5,4 @@ use ./Day1/assignment/reorder_names
 use ./Day2/assignment/sorter
 use ./Day2/assignment/sorter/SortUtils
 use ./Day2/assignment/sorter/Cmd
+use ./Day2/assignment/sorter2
