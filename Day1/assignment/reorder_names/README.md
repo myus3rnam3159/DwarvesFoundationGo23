@@ -1,4 +1,4 @@
-*** Reordering Names Based on Country Code ***
+***Reordering Names Based on Country Code***
 
 ---
 
@@ -12,4 +12,4 @@ based on the specified country's format.
 country's format.
 
 ---
-![Result](./Day1/assignment/reorder_names/result.png)
+![Result](https://github.com/myus3rnam3159/DwarvesFoundationGo23/blob/master/Day1/assignment/reorder_names/result.png)
